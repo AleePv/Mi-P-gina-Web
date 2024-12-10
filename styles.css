@@ -1,10 +1,27 @@
 body {
-    background-image: url('./IMG/fondo.jpg');
-    background-size: 820px;
-    background-repeat: no-repeat;
-}
-h1 {
-    color: red;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+  }
+  
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./IMG/fondo.png');
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1; 
+  }
+header {
+    position: relative;
+    left: 550px;
+    border: 0.5px solid black;
+    padding: 5px;
+    width: 25%;
     text-align: center;
-    
+    margin-top: 5px; 
 }
