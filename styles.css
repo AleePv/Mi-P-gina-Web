@@ -1,5 +1,6 @@
 body {
-    background-image: url(./IMG/fondo.PNG);
+    background-image: url('./IMG/fondo.jpg');
+    background-size: 820px;
     background-repeat: no-repeat;
 }
 h1 {
