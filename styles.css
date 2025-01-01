@@ -1,27 +1,81 @@
 body {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-  }
-  
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+}
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('./IMG/fondo.png');
-    background-size: cover;
-    opacity: 0.8;
-    z-index: -1; 
-  }
-header {
-    position: relative;
-    left: 550px;
-    border: 0.5px solid black;
-    padding: 5px;
-    width: 25%;
-    text-align: center;
-    margin-top: 5px; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./IMG/fondo.jpg');
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1; 
+}
+.title {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 350px;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  background: linear-gradient(40deg, purple, pink, purple, pink, purple);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0, 0.3);
+  letter-spacing: 3px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  transform: translateY(20px);
+}
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: silver;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(3, 8, 8, 0.668);
+  color: blue;
+}
+
+.navbar {
+  z-index: 1000;
+}
+.navbar-nav .nav-link {
+  font-size: 18px; 
+}
+.navbar-toggler-icon {
+  background-color: white; 
+}
+.container {
+  margin-top: 80px; 
 }
